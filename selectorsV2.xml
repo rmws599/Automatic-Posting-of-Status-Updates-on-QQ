@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://selector/core" xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard">
+  <group id="88c60aae-4729-4137-bb69-bd6a6965ca5f" name="默认分组" type="Unknown" processName="" icon="" criteria="">
+    <selector id="8bb4701e-6e57-4b36-bea3-f5bbad1e69da" name="打开发布按钮" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\ad6b8f7c-122b-49e5-b331-4ae248a2fa0b.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/p5w" index-attribute="2">
+        <optional index="2" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/yqf">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" index-attribute="1">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/b9o">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq:id/yr3">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/root">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/dgz">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq.qzone_df_impl:id/hke">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.Button" id="com.tencent.mobileqq:id/dg0" accessibility-id="发表动态">
+        <optional index-attribute="2" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.ImageView" id="com.tencent.mobileqq:id/x3m" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+    </selector>
+    <selector id="bffdd64b-7b11-4321-8132-ce114feff1df" name="按钮_下一步(1)" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\3104bcc3-3785-413a-97bd-f6fc7d641c12.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq.aelight_impl:id/an4">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/root">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/sp8" index-attribute="2">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" index-attribute="1">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.Button" id="com.tencent.mobileqq:id/th2" index-attribute="2">
+        <optional text="下一步(1)" index="1" />
+      </mobile>
+    </selector>
+    <selector id="fe789b85-20b7-4460-84fe-71029027212b" name="发说说" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\2a130b69-eece-4c66-a47b-5b4b98b55f1a.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" index-attribute="1">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq.qzone_df_impl:id/j62" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+    </selector>
+    <selector id="1ab9435e-a72e-42e0-b171-8f924c0a7aa6" name="文本框_发表" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\a8ddbb2d-aaf0-4584-b072-cbfe4fa3bab7.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/jqh">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/jqh">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/ha1">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.TextView" id="com.tencent.mobileqq:id/ivTitleBtnRightText" index-attribute="2">
+        <optional text="发表" index="1" />
+      </mobile>
+    </selector>
+    <selector id="0417b7d3-e716-4991-920a-a85e3691ba2b" name="图片1" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\fc384f0f-1b1f-48bb-89e5-21c7925db877.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq.aelight_impl:id/an4">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/root">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/sp9">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/spt">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq:id/spu">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView" id="com.tencent.mobileqq:id/sp7">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" index-attribute="1">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/y1y">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.CheckBox" id="com.tencent.mobileqq:id/y1z">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+    </selector>
+    <selector id="a88a3be8-1dbe-453c-b180-da303a0f5c78" name="输入框_分享新鲜事..." type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\e0594fbf-8d75-4ec0-8f12-3fcd10bc91b8.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/elo">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/hkh">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.ScrollView" id="com.tencent.mobileqq:id/l57">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+      <mobile x:name="android.widget.EditText" id="com.tencent.mobileqq:id/itv">
+        <optional index-attribute="0" text="分享新鲜事..." index="0" />
+      </mobile>
+    </selector>
+    <selector id="0bcd71c1-5952-47d4-9f09-c1e7a1eda189" name="单选按钮_私密" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\399ac60d-9768-409f-8c58-c1d09712ebfb.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/b9v">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/ae8">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/cq6">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/l2a">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/webview">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="com.tencent.tbs.core.webkit.WebView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.webkit.WebView">
+        <optional index-attribute="0" text="谁能看见" index="0" />
+      </mobile>
+      <mobile x:name="android.view.View">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.View">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RadioGroup">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RadioButton" index-attribute="2">
+        <optional text="私密" index="2" />
+      </mobile>
+    </selector>
+    <selector id="1c6f99bc-6e37-4555-9e21-d8bce27ecbf5" name="单选按钮_私密_1" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\f03857c9-8934-4e0f-b72a-3808a18662b4.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/b9v">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/ae8">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/cq6">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/l2a">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/webview">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="com.tencent.tbs.core.webkit.WebView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.webkit.WebView">
+        <optional index-attribute="0" text="谁能看见" index="0" />
+      </mobile>
+      <mobile x:name="android.view.View">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.View">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RadioGroup">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RadioButton" index-attribute="2">
+        <optional text="私密" index="2" />
+      </mobile>
+    </selector>
+    <selector id="66b62419-72ae-4b8e-8c69-f6df53be20f2" name="选择图片" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\6f729a68-0b99-4be1-8012-11ac2d9c6f7f.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/elo">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/hkh">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.ScrollView" id="com.tencent.mobileqq:id/l57">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/fpg">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="com.tencent.widget.GridView" id="com.tencent.mobileqq:id/fpf">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/htc">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/ht8">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/ee2">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+    </selector>
+    <selector id="ab71becb-0492-4eab-b8e7-ab785c487948" name="框架容器" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\12a3ef73-3a8e-47fe-9da6-4c39bf761775.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/elo">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/hkh">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.ScrollView" id="com.tencent.mobileqq:id/l57">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/iu_" index-attribute="1">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/x62">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/x61" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/x5_" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+    </selector>
+    <selector id="99d106fd-21f7-4527-8404-b66fe4a1e4e1" name="框架容器_1" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\9534e712-2bad-488e-a028-a634dc8cdd76.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/elo">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/hkh">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.ScrollView" id="com.tencent.mobileqq:id/l57">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/iu_" index-attribute="1">
+        <optional index="1" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/x62">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/x61" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/x5_" index-attribute="0">
+        <optional index="0" />
+      </mobile>
+    </selector>
+    <selector id="5dda8d13-1ebc-4bac-88c3-bc3777058ff0" name="单选按钮_私密_2" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\ca6d4301-936f-4169-81f1-b88ae8777e87.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/b9v">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/ae8">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/cq6">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RelativeLayout" id="com.tencent.mobileqq:id/l2a">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/webview">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="com.tencent.tbs.core.webkit.WebView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.webkit.WebView">
+        <optional index-attribute="0" text="谁能看见" index="0" />
+      </mobile>
+      <mobile x:name="android.view.View">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.View">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RadioGroup">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.RadioButton" index-attribute="2">
+        <optional text="私密" index="2" />
+      </mobile>
+    </selector>
+    <selector id="871844f7-cffa-469d-a862-25f15c79b7f6" name="复选框" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\a8a8e9cd-170b-4da6-ace9-3a8b385137aa.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq.aelight_impl:id/an4">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/root">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/sp9">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/spt">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq:id/spu">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView" id="com.tencent.mobileqq:id/sp7">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" index-attribute="2">
+        <optional index="2" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/y1y">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.CheckBox" id="com.tencent.mobileqq:id/y1z">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+    </selector>
+    <selector id="de0dbe93-7f47-49c2-8f7a-8fd3bfe4d421" name="复选框_1" type="simple" framework="mobile" processName="" productName="" winTitle="" screenshot=".dev\screenshot\b3213b9e-3312-42b3-a72c-a798b03c5981.jpg">
+      <mobile x:name="hierarchy">
+        <optional />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="android:id/content">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq.aelight_impl:id/an4">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/root">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.LinearLayout" id="com.tencent.mobileqq:id/sp9">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" id="com.tencent.mobileqq:id/spt">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="androidx.viewpager.widget.ViewPager" id="com.tencent.mobileqq:id/spu">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="androidx.recyclerview.widget.RecyclerView" id="com.tencent.mobileqq:id/sp7">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+      <mobile x:name="android.view.ViewGroup" index-attribute="3">
+        <optional index="3" />
+      </mobile>
+      <mobile x:name="android.widget.FrameLayout" id="com.tencent.mobileqq:id/y1y">
+        <optional index-attribute="1" index="0" />
+      </mobile>
+      <mobile x:name="android.widget.CheckBox" id="com.tencent.mobileqq:id/y1z">
+        <optional index-attribute="0" index="0" />
+      </mobile>
+    </selector>
+  </group>
+</repository>

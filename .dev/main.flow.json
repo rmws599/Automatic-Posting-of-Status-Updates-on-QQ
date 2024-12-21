@@ -1,0 +1,658 @@
+{
+  "name": "main",
+  "memo": "我的自动化应用",
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "ddb30488-f01b-4bac-b519-ce54888c04ce",
+      "name": "mobile.connect_device",
+      "isEnabled": true,
+      "comment": "使用 %connect_mode% 模式连接名称为 %custom_name% 的手机，并将连接对象保存至%session%",
+      "inputs": {
+        "connect_source": {
+          "value": "10:specific",
+          "display": "指定手机"
+        },
+        "connect_mode": {
+          "value": "10:appium",
+          "display": "Appium"
+        },
+        "ingore_failed_device": {
+          "value": "13:True"
+        },
+        "auto_unlock": {
+          "value": "13:False"
+        },
+        "unlockType": {
+          "value": "10:pin",
+          "display": "数字密码"
+        },
+        "mobile_password": {
+          "value": "10:"
+        },
+        "custom_name": {
+          "value": "10:23049RAD8C"
+        }
+      },
+      "outputs": {
+        "session": {
+          "name": "手机",
+          "isEnable": true
+        },
+        "session_list": {
+          "name": "device_session_list",
+          "isEnable": false
+        },
+        "failed_sessions": {
+          "name": "failed_udid_list",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "ba0c0dac-28ff-4378-b11f-0c4ded8f325d",
+      "name": "excel.get_active_workbook",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {
+        "excel_instance": {
+          "name": "excel_instance",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "7b806763-e13e-4472-bc13-9d2e53ce374d",
+      "name": "excel.read_data_from_workbook",
+      "isEnabled": true,
+      "comment": "从Excel对象%workbook%中读取已使用的矩形区域内容，将数据保存到%excel_data%",
+      "inputs": {
+        "workbook": {
+          "value": "11:excel_instance",
+          "display": "excel_instance"
+        },
+        "read_way": {
+          "value": "10:used_range",
+          "display": "已使用区域内容"
+        },
+        "range": {
+          "value": null
+        },
+        "cell_row_num": {
+          "value": null
+        },
+        "cell_column_name": {
+          "value": null
+        },
+        "area_begin_row_num": {
+          "value": null
+        },
+        "area_begin_column_name": {
+          "value": null
+        },
+        "area_end_row_num": {
+          "value": null
+        },
+        "area_end_column_name": {
+          "value": null
+        },
+        "row_row_num": {
+          "value": null
+        },
+        "get_display_text": {
+          "value": "13:False"
+        },
+        "has_header_row": {
+          "value": "13:False"
+        },
+        "column_column_name": {
+          "value": null
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "using_text": {
+          "value": "13:False"
+        },
+        "text_cols": {
+          "value": "10:"
+        },
+        "clear_space": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "excel_data": {
+          "name": "excel_data",
+          "variableLabel": "Excel已使用区域内容",
+          "type": "list<list<any>>",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "882bb21c-c26e-4cec-b352-75c817cb36f2",
+      "name": "workflow.forin",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "list": {
+          "value": "11:excel_data"
+        },
+        "loop_start_index": {
+          "value": "10:1"
+        },
+        "loop_end_index": {
+          "value": "10:-1"
+        },
+        "output_with_index": {
+          "value": "13:True"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "row_data",
+          "type": "list<any>",
+          "isEnable": true
+        },
+        "loop_index": {
+          "name": "loop_item_index",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "2e8e1f28-56c1-45f7-8a6b-1d9241731ba5",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:row_data[2]"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:正常"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "8b1aa924-74d0-407f-8922-144b13a6ce93",
+      "name": "workflow.continue",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "2715af44-ecdf-43b4-8c7c-003d347d277b",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "bb6b0da8-3acb-4fa8-8147-3fd85c49313e",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:打开发布按钮",
+          "display": "打开发布按钮"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "47a98cf7-9028-41de-a779-6ad54f001db9",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:发说说",
+          "display": "发说说"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "05bef453-5eb1-4140-a490-4e648e7e70d4",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:选择图片",
+          "display": "选择图片"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "41c4f4b7-ce26-4d05-be6e-fe398c7bac51",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:row_data[1]"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:1"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5f0a97ac-b5b4-4885-a4b0-d54808f961a0",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:图片1",
+          "display": "图片1"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "3492670e-321e-4e7b-b3b8-9fd23f101e94",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:row_data[1]"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:2"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "255bd0f6-8945-443c-98e3-5cb0c6212c85",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:复选框",
+          "display": "复选框"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "164c59a2-e4ce-45e8-a6b0-dc90e7eaf39b",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:row_data[1]"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:3"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "c606f6b4-bc59-4a9b-a3fc-378705cf787e",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:复选框_1",
+          "display": "复选框_1"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "7207d9d6-597e-408f-8b9f-6bb5ca490b96",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "a34b229a-bccd-4785-91e4-d29c369e3ecb",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:按钮_下一步(1)",
+          "display": "按钮_下一步(1)"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "0ec4d367-381d-44b3-b20f-e5823f7a09a1",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:输入框_分享新鲜事...",
+          "display": "输入框_分享新鲜事..."
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "43ffe57c-05ad-4ab1-b56f-6e72cefcd0b5",
+      "name": "mobile.element.input",
+      "isEnabled": true,
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "input_object": {
+          "value": "10:input",
+          "display": "指定输入框"
+        },
+        "element": {
+          "value": "12:输入框_分享新鲜事...",
+          "display": "输入框_分享新鲜事..."
+        },
+        "text": {
+          "value": "13:row_data[0]"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "end_with_enter": {
+          "value": "13:False"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "9736978b-bb47-46b8-ab59-b54506d3a3d9",
+      "name": "mobile.session.click",
+      "isEnabled": true,
+      "comment": "%clicks%手机%session%屏幕上的坐标点（%point_x%，%point_y%）",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "click_postion": {
+          "value": "10:by_axios",
+          "display": "通过坐标指定"
+        },
+        "point_x": {
+          "value": "10:800"
+        },
+        "point_y": {
+          "value": "10:50"
+        },
+        "template_images": {
+          "value": null
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:3"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "99039ee9-6529-4242-bd9b-3721000aa9b1",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:手机",
+          "display": "手机"
+        },
+        "element": {
+          "value": "12:文本框_发表",
+          "display": "文本框_发表"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "16ee990e-fc52-45af-98ed-923396d8e554",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:excel_instance",
+          "display": "excel_instance"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "13:loop_item_index+2"
+        },
+        "column_name": {
+          "value": "10:C"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "10:正常"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b8582496-5931-438e-ae76-1953dc13155e",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}

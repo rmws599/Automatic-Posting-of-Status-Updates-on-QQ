@@ -1,0 +1,82 @@
+{
+  "name": "子流程3",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "83113e1d-dace-4b45-8394-21781c8d0954",
+      "name": "mobile.connect_device",
+      "isEnabled": true,
+      "comment": "使用 %connect_mode% 模式连接名称为 %custom_name% 的手机，并将连接对象保存至%session%",
+      "inputs": {
+        "connect_source": {
+          "value": "10:specific",
+          "display": "指定手机"
+        },
+        "connect_mode": {
+          "value": "10:appium",
+          "display": "Appium"
+        },
+        "ingore_failed_device": {
+          "value": "13:True"
+        },
+        "auto_unlock": {
+          "value": "13:False"
+        },
+        "unlockType": {
+          "value": "10:pin",
+          "display": "数字密码"
+        },
+        "mobile_password": {
+          "value": "10:"
+        },
+        "custom_name": {
+          "value": "10:23049RAD8C"
+        }
+      },
+      "outputs": {
+        "session": {
+          "name": "device_session",
+          "isEnable": true
+        },
+        "session_list": {
+          "name": "device_session_list",
+          "isEnable": false
+        },
+        "failed_sessions": {
+          "name": "failed_udid_list",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "184096fb-3efd-466a-9ab5-aa1a5efd96c2",
+      "name": "mobile.element.click",
+      "isEnabled": true,
+      "comment": "在手机元素%element%上，%clicks%%anchor_type%位置",
+      "inputs": {
+        "session": {
+          "value": "11:device_session",
+          "display": "device_session"
+        },
+        "element": {
+          "value": "12:框架容器",
+          "display": "框架容器"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        }
+      },
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}
